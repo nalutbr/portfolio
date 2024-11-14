@@ -1,0 +1,247 @@
+styles.css
+
+/* Reset básico */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a,
+form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+header {
+    background: #003366;
+    color: #ffffff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button,
+.projeto-link,
+.contato-form button {
+    background-color: #00bfae;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    /* Transição suave */
+}
+
+.cta-button:hover,
+.projeto-link:hover,
+.contato-form button:hover {
+    background-color: #009d8f;
+}
+
+.cta-button:active,
+.projeto-link:active,
+.contato-form button:active {
+    transform: scale(0.95);
+    /* Efeito de clique */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra ao clicar */
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.sobre-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.texto {
+    max-width: 600px;
+}
+
+.projetos {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.projetos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projetos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projeto-card {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    /* Definindo uma largura fixa para os cards */
+    text-align: center;
+}
+
+.projeto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projeto-info {
+    padding: 15px;
+}
+
+.projeto-info h3 {
+    margin-bottom: 10px;
+}
+
+.projeto-link {
+    color: #00bfae;
+    text-decoration: none;
+}
+
+.projeto-link:hover {
+    text-decoration: underline;
+}
+
+.contato {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contato-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato-form label {
+    font-weight: bold;
+}
+
+.contato-form input,
+.contato-form textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para o botão de download */
+.download-button {
+    display: inline-block;
+    background-color: #ff5722;
+    /* Cor de fundo do botão */
+    color: #ffffff;
+    /* Cor do texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    /* Espaçamento acima do botão */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-button:hover {
+    background-color: #e64a19;
+    /* Cor de fundo quando o botão é hover */
+}
+
+.download-button:active {
+    transform: scale(0.95);
+    /* Efeito de clique */
+}
